@@ -16,7 +16,7 @@ object NetworkModule {
     @BaseUrl
     @Provides
     @FeatureScope
-    fun provideBaseUrl(): String = "https://rom-dv-api.herokuapp.com/"
+    fun provideBaseUrl(): String = "https://plannerok.ru/api/"
 
     @Provides
     @FeatureScope
