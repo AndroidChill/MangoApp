@@ -50,4 +50,16 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // dagger
+    implementation(libs.dagger)
+    implementation(libs.dagger.compiler)
+
+    implementation(libs.lifecycle.viewmodel)
+    implementation(libs.lifecycle.runtime)
+
+    implementation(libs.retrofit)
+    implementation(libs.moshi)
+    implementation(libs.logging)
+    implementation(libs.okhttp)
 }
