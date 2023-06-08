@@ -30,11 +30,10 @@ object NetworkModule {
     @Provides
     @FeatureScope
     fun provideOkHttpClient(loggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
-        val client = OkHttpClient.Builder()
-        if (BuildConfig.DEBUG) {
-            client.addInterceptor(loggingInterceptor)
-        }
-        return client.build()
+        return OkHttpClient
+            .Builder()
+            .addInterceptor(loggingInterceptor)
+            .build()
     }
 
     @Provides
