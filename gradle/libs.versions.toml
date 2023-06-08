@@ -11,6 +11,7 @@ constraintlayout = "2.1.4"
 navigation-fragment-ktx = "2.5.3"
 navigation-ui-ktx = "2.5.3"
 dagger ="2.45"
+dagger-compiler="2.44.2"
 retrofit="2.9.0"
 viewmodel="2.6.1"
 logging="5.0.0-alpha.9"
@@ -27,17 +28,19 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation-fragment-ktx" }
 navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation-ui-ktx" }
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref="okhttp" }
-logging = { group = "com.squareup.okhttp3", name = "logging-interceptors", version.ref = "logging"}
+logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "logging"}
 moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "viewmodel" }
 lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "viewmodel" }
 dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
-dagger-compiler = { group = "om.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
+dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
+andoridLibrary = { id = "com.android.library", version.ref = "agp"}
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kapt = { id  = "kotlin-kapt"}
 
 [bundles]
 
